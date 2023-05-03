@@ -28,9 +28,14 @@ function App() {
     // )
 
     /* Button Component */
+
+    const handleClick = () => {
+        console.log('Clicked!');
+    }
+
     return (
         <div>
-            <Button color={undefined} onClick={() => console.log('Clicked!')}>My Button</Button>
+            <Button color={'secondary'} onClick={handleClick}>My Button</Button>
         </div>
     )
 }
