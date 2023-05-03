@@ -28,8 +28,8 @@ function ListGroup({items, heading, onSelectItem}: Props) {
 
     return <>
         <h1>{heading}</h1>
-        {/*Conditional Rendering */}
 
+        {/*Conditional Rendering */}
         {items.length === 0 && <p>No item found</p>}
         <ul className="list-group">
             {items.map((item, index) =>
