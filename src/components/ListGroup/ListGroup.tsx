@@ -4,6 +4,8 @@
 
 // import {MouseEvent} from "react";
 
+import styles from './ListGroup.module.css'
+import './ListGroup.css'
 
 import {useCallback, useState} from "react";
 
@@ -31,7 +33,7 @@ function ListGroup({items, heading, onSelectItem}: Props) {
 
         {/*Conditional Rendering */}
         {items.length === 0 && <p>No item found</p>}
-        <ul className="list-group">
+        <ul className={[styles.listGroup, styles.container].join(' ')}>
             {items.map((item, index) =>
                 // a unique key prop
                 <li
